@@ -1,5 +1,7 @@
 package lt.codeacademy.javau5.tdd;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +22,10 @@ public class MainService {
 
 	public Daiktas getById(Long id) {		
 		return repo.findById(id).orElse(null);
+	}
+
+	public List<Daiktas> getAll() {		
+		return repo.findAll();
 	}
 	
 	
