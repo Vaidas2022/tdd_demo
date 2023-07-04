@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
 
 	@Autowired
-	MainService service;
-	
+	MainService service;	
 	@GetMapping("/daiktas")
 	public Daiktas getDaiktas() {
+
 
 		return new Daiktas(1L, "");
 	}
